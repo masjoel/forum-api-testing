@@ -48,6 +48,7 @@ const createServer = async (container) => {
         method: 'GET',
         url: '/',
       });
+      
       // Assert
       const responseJson = JSON.parse(response.payload);
       expect(response.statusCode).toEqual(200);
